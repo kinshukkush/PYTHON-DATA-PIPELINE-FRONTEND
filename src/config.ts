@@ -1,4 +1,2 @@
-
-export const API_BASE_URL = import.meta.env.DEV
-    ? '/api'
-    : (import.meta.env.VITE_API_BASE_URL || 'https://python-data-pipelinee.onrender.com');
+// Use environment variable with fallback
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://python-data-pipelinee.onrender.com';
